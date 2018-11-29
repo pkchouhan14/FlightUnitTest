@@ -16,7 +16,7 @@ read_data<-function(){
   #dataToWork <- lapply(fl.qualified, read.csv)
 
   #mention file path in code
-  dataToWork<-read.csv(file="C:\\Users\\Pushpinder\\BTIIC\\Code\\Data\\flights_for_modelling.csv")
+  dataToWork<-read.csv(file="C:\\Users\\Pushpinder\\BTIIC\\Code\\FlightUnitTest\\flights_for_modelling.csv")
   #str(dataToWork)
   #summary(dataToWork)
   return(dataToWork);

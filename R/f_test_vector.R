@@ -9,16 +9,10 @@
 #'
 #' @examples
 #' dataTest <- data.frame(x=c(rnorm(30, mean = 0, sd = 2)), y=c(rnorm(30, mean = 1, sd = 1)))
-#' f_test_vector(dataTest,x,y)
+#' f_test_vector(dataTest,"x","y")
 f_test_vector<-function(data, colName1, colName2){
-  typeof(data[colName1])
- # print(colName2)
- # print(data)
- # tryx <- median(unlist(data[colName1]))
-  #x<-unlist(data["colName1"])
-  #y<- unlist(data["colName2"])
- #fTestVariance <- var.test(x,y)
- #reutrn(fTestVariance)
-#var.test(lm(x ~ 1), lm(y ~ 1))  # for fitted linear model objects
+  typeof(unlist(data[colName1]))
+  fTestVariance=var.test(unlist(data[colName1]), unlist(data[colName2]))
+  return(fTestVariance)
 }
 
