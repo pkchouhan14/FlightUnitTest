@@ -12,7 +12,8 @@
 #' f_test_vector(dataTest,"x","y")
 f_test_vector<-function(data, colName1, colName2){
   typeof(unlist(data[colName1]))
-  fTestVariance=var.test(unlist(data[colName1]), unlist(data[colName2]))
+  fTestVariance<-var.test(unlist(data[colName1]), unlist(data[colName2]))
   return(fTestVariance)
 }
+
 

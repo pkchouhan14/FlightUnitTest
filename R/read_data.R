@@ -17,7 +17,7 @@ read_data<-function(){
 
   #mention file path in code
   dataToWork<-read.csv(file="C:\\Users\\Pushpinder\\BTIIC\\Code\\FlightUnitTest\\flights_for_modelling.csv")
-  #str(dataToWork)
+   #str(dataToWork)
   #summary(dataToWork)
   return(dataToWork);
 }

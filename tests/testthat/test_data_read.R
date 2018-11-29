@@ -19,10 +19,11 @@ test_that("check NA in data",{
   expect_true(sum(is.na(read_data())),0)
 })
 
-#test_that("",{
 
-
-#})
+test_that("delayed column values are larger than zero",{
+under_column_range(read_data(), "delayed",0)
+expect_true(under_column_range(read_data(), "delayed",0)<0)
+})
 
 #test_that("check no row has any missing values",{
 #  assert_rows(read_data(),num_row_NAs, function(x) x==0,everything())

@@ -21,5 +21,5 @@ Title check if 2 column (numeric vector) have the same variance
 }
 \examples{
 dataTest <- data.frame(x=c(rnorm(30, mean = 0, sd = 2)), y=c(rnorm(30, mean = 1, sd = 1)))
-f_test_vector(dataTest,x,y)
+f_test_vector(dataTest,"x","y")
 }
