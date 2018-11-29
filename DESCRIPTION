@@ -1,0 +1,13 @@
+Package: FlightUnitTest
+Type: Package
+Title: Analyse flight data
+Version: 0.1.0
+Author: Pushpinder Kaur Chouhan
+Maintainer: Pushpinder Kaur Chouhan <p.chpouhan@ulster.as.uk>
+Description: Delyed flight data from New York
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat
+Depends: tidyverse 
+RoxygenNote: 6.1.0
